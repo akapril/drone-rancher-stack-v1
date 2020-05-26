@@ -4,15 +4,11 @@ DOCKER_COMPOSE=`find / -name docker-compose.yml`
 if [[ -n $PLUGIN_ACCESSKEY ]]; then
     ACCESSKEY="$PLUGIN_ACCESSKEY"
 fi
-# if [[ -n $RANCHER_ACCESSKEY ]]; then
-#     ACCESSKEY="$RANCHER_ACCESSKEY"
-# fi
+
 if [[ -n $PLUGIN_SECRETKEY ]]; then
     SECRETKEY="$PLUGIN_SECRETKEY"
 fi
-# if [[ -n $RANCHER_SECRETKEY ]]; then
-#     SECRETKEY="$RANCHER_SECRETKEY"
-# fi
+
 echo "rancher-compose.yml @ ${RANCHER_COMPOSE}" 
 cat ${RANCHER_COMPOSE}
 echo ""
